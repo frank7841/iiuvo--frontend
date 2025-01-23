@@ -16,7 +16,26 @@ class CodegenLoader extends AssetLoader{
 
   static const Map<String,dynamic> en = {
   "motorTitle": "By MotorVault",
-  "iiuovoTitle": "IIUOVO"
+  "iiuovoTitle": "IIUOVO",
+  "signUp": "Sign Up",
+  "login": "Login",
+  "welcomeTitle": "Hi, Welcome to Iiuvo",
+  "signupTitle": "Sign up to create your brand new account",
+  "enterEmail": "Enter your email",
+  "enterPhone": "Enter your phone number",
+  "enterPassword": "Enter your password",
+  "confirmPassword": "Confirm your password",
+  "enterFullName": "Enter your Full name",
+  "emailLabel": "Email address",
+  "passwordLabel": "Password",
+  "confirmPasswordLabel": "Confirm password",
+  "fullNameLabel": "Full name",
+  "phoneLabel": "Phone number",
+  "termsAndConditions": "By signing up you agree to Motorvault’s Terms of Service and Privacy Policy",
+  "otpPhone": "Verify your identity",
+  "pleaseEnterOtp": "Enter the code we have sent to your phone",
+  "otpMessage": "This helps us keep your account secure by verifying that it's really you",
+  "verifyOtp": "Verify OTP"
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"en": en};
 }

@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:iiuovo/routes/named-routes.dart';
+import 'package:iiuovo/routes/named_routes.dart';
 import 'package:iiuovo/translations/codegen_loader.g.dart';
 import 'package:iiuovo/translations/locale_keys.g.dart';
 import 'package:iiuovo/views/landingPage.dart';
+import 'package:iiuovo/views/signup/signup.dart';
+import 'package:iiuovo/views/signup/verify/verify_phoneNumber.dart';
 import 'package:logger/logger.dart';
 
 final GlobalKey<NavigatorState> _rootNavigator = GlobalKey(
@@ -27,6 +29,16 @@ final goRouterProvider = Provider<GoRouter>((ref) {
             path: landingPage,
             name: landingPage,
             builder: (context, state) => const LandingPage()),
+        GoRoute(
+            parentNavigatorKey: _rootNavigator,
+            path: signUp,
+            name: signUp,
+            builder: (context, state) => const Signup()),
+        GoRoute(
+            parentNavigatorKey: _rootNavigator,
+            path: verifyPhone,
+            name: verifyPhone,
+            builder: (context, state) => const VerifyPhone()),
       ]);
 });
 
