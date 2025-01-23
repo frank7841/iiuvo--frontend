@@ -60,7 +60,7 @@ class _LandingPageState extends State<LandingPage> {
                         child: WhiteCta(
                           text: LocaleKeys.login.tr().toUpperCase(),
                           onPressedCallback: () {
-                            context.pushNamed('/');
+                            context.pushNamed(login);
                           },
                         ),
                       ),

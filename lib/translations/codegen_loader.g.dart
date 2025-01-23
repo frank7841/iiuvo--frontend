@@ -20,6 +20,8 @@ class CodegenLoader extends AssetLoader{
   "signUp": "Sign Up",
   "login": "Login",
   "welcomeTitle": "Hi, Welcome to Iiuvo",
+  "loginTitle": "Welcome Back to Iiuvo",
+  "loginMessage": "Login to your account to continue",
   "signupTitle": "Sign up to create your brand new account",
   "enterEmail": "Enter your email",
   "enterPhone": "Enter your phone number",
@@ -35,7 +37,8 @@ class CodegenLoader extends AssetLoader{
   "otpPhone": "Verify your identity",
   "pleaseEnterOtp": "Enter the code we have sent to your phone",
   "otpMessage": "This helps us keep your account secure by verifying that it's really you",
-  "verifyOtp": "Verify OTP"
+  "verifyOtp": "Verify OTP",
+  "forgotPassword": "Forgot Password?"
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"en": en};
 }

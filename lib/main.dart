@@ -7,6 +7,7 @@ import 'package:iiuovo/routes/named_routes.dart';
 import 'package:iiuovo/translations/codegen_loader.g.dart';
 import 'package:iiuovo/translations/locale_keys.g.dart';
 import 'package:iiuovo/views/landingPage.dart';
+import 'package:iiuovo/views/loging/login.dart';
 import 'package:iiuovo/views/signup/signup.dart';
 import 'package:iiuovo/views/signup/verify/verify_phoneNumber.dart';
 import 'package:logger/logger.dart';
@@ -39,7 +40,14 @@ final goRouterProvider = Provider<GoRouter>((ref) {
             path: verifyPhone,
             name: verifyPhone,
             builder: (context, state) => const VerifyPhone()),
+        GoRoute(
+            parentNavigatorKey: _rootNavigator,
+            path: login,
+            name: login,
+            builder: (context, state) => const Login()),
+
       ]);
+
 });
 
 void main() async {
